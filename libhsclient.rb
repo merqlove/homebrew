@@ -11,6 +11,7 @@ class Libhsclient < Formula
 
   def install
     ENV["LIBTOOLIZE"] = "glibtoolize"
+    ENV["MAKEFLAGS"] = "-j1"
     system "./autogen.sh"
     system "touch libhsclient/Makefile.in"
     system "touch handlersocket/Makefile.in"
