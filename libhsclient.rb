@@ -12,6 +12,7 @@ class Libhsclient < Formula
   def install
     ENV["LIBTOOLIZE"] = "glibtoolize"
     system "./autogen.sh"
+    system "cp libhsclient/Makefile.plain libhsclient/Makefile"
     system "./configure", "--disable-debug", "--disable-dependency-tracking",
                           "--prefix=#{prefix}", "--disable-handlersocket-server"
     system "make install"
