@@ -3,7 +3,7 @@ require 'formula'
 class FlexSdk45 < Formula
   url 'http://fpdownload.adobe.com/pub/flex/sdk/builds/flex4.5/flex_sdk_4.5.0.20967_mpl.zip'
   homepage 'http://opensource.adobe.com/wiki/display/flexsdk/Flex+SDK'
-  md5 'ced7be000059c6349bbe0adba1d07f72'
+  sha1 'cee7aab1b37e37836f7ca25e8302222270965f5d'
 
   def install
     libexec.install Dir['*']
