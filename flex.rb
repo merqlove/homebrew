@@ -1,9 +1,9 @@
 require 'formula'
 
 class Flex < Formula
-  url 'https://github.com/downloads/dailymotion/homebrew/flex_4.5.0.19786.zip'
+  url 'http://fpdownload.adobe.com/pub/flex/sdk/builds/flex4.5/flex_sdk_4.5.0.20967_mpl.zip'
   homepage 'http://opensource.adobe.com/wiki/display/flexsdk/Flex+SDK'
-  md5 '75ca478f61ca5dcc3a861e8af2026562'
+  md5 'ced7be000059c6349bbe0adba1d07f72'
 
   def install
     libexec.install Dir['*']
