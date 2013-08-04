@@ -10,7 +10,7 @@ class SaneBackendsDev < Formula
     root_url 'http://content.merqlove.ru/bottles'
     # sha1 'f4307ebd1fe094dbd14e4e19c717baa83bdd9631' => :snow_leopard
     # sha1 '45d35923b0439617adb86630bdd4985a6cf03984' => :lion
-    sha1 '86777cdbd3c382ee913a8f7f8f0cff5bd8dff1a2' => :mountain_lion
+    sha1 'd3afe3888c2fec97c1be08e71796bca91247d51c' => :mountain_lion
   end
 
   depends_on 'jpeg'
