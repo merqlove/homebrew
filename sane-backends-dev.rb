@@ -2,7 +2,7 @@ require 'formula'
 
 class SaneBackendsDev < Formula
   homepage 'http://www.sane-project.org/'
-  url 'https://www.dropbox.com/sh/26miq420ssd1sww/Z_VeHxdk9r'
+  url 'https://www.dropbox.com/sh/26miq420ssd1sww/rtGoEx96nZ/sane-backends.tar.gz'
   sha1 '86777cdbd3c382ee913a8f7f8f0cff5bd8dff1a2'
 
   # option :universal
