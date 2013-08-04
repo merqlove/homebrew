@@ -17,12 +17,6 @@ class SaneBackendsDev < Formula
   depends_on 'libtiff'
   depends_on 'libusb-compat'
 
-  def pour_bottle?
-    # If libtool is keg-only it currently breaks the bottle.
-    # This is a temporary workaround until we have a better fix.
-    not Formula.factory('libtool').keg_only?
-  end
-
   skip_clean :la
 
   # Fixes u_long missing error. Reported upstream:
