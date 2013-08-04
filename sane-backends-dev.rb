@@ -2,14 +2,15 @@ require 'formula'
 
 class SaneBackendsDev < Formula
   homepage 'http://www.sane-project.org/'
-  url 'https://www.dropbox.com/sh/26miq420ssd1sww/rtGoEx96nZ/sane-backends.tar.gz'
-  sha1 '86777cdbd3c382ee913a8f7f8f0cff5bd8dff1a2'
+  url 'http://anonscm.debian.org/gitweb/?p=sane/sane-backends.git;a=snapshot;h=0fbe145706b954d5aede360c4c9e703e6178212e;sf=tgz'
+  sha1 '49f62868569edfccbfc8de70e87996c94739a176'
 
   # option :universal
   bottle do
+    root_url 'https://www.dropbox.com/sh/a8ices997q6yc8q/-GTJgOIG0K'
     # sha1 'f4307ebd1fe094dbd14e4e19c717baa83bdd9631' => :snow_leopard
     # sha1 '45d35923b0439617adb86630bdd4985a6cf03984' => :lion
-    sha1 'a0eb40e1fbf29651949c9baa530c34e7bef769f4' => :mountain_lion
+    sha1 '86777cdbd3c382ee913a8f7f8f0cff5bd8dff1a2' => :mountain_lion
   end
 
   depends_on 'jpeg'
