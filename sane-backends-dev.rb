@@ -7,7 +7,7 @@ class SaneBackendsDev < Formula
 
   # option :universal
   bottle do
-    root_url 'https://content.merqlove.ru/bottles'
+    root_url 'http://content.merqlove.ru/bottles'
     # sha1 'f4307ebd1fe094dbd14e4e19c717baa83bdd9631' => :snow_leopard
     # sha1 '45d35923b0439617adb86630bdd4985a6cf03984' => :lion
     sha1 '86777cdbd3c382ee913a8f7f8f0cff5bd8dff1a2' => :mountain_lion
@@ -16,6 +16,14 @@ class SaneBackendsDev < Formula
   depends_on 'jpeg'
   depends_on 'libtiff'
   depends_on 'libusb-compat'
+
+  def pour_bottle?
+    # If libtool is keg-only it currently breaks the bottle.
+    # This is a temporary workaround until we have a better fix.
+    not Formula.factory('libtool').keg_only?
+  end
+
+  skip_clean :la
 
   # Fixes u_long missing error. Reported upstream:
   # https://github.com/fab1an/homebrew/commit/2a716f1a2b07705aa891e2c7fbb5148506aa5a01
