@@ -3,7 +3,7 @@ require 'formula'
 class SaneBackendsDev < Formula
   homepage 'http://www.sane-project.org/'
   url 'http://anonscm.debian.org/gitweb/?p=sane/sane-backends.git;a=snapshot;h=0fbe145706b954d5aede360c4c9e703e6178212e;sf=tgz'
-  sha1 '0fbe145706b954d5aede360c4c9e703e6178212e'
+  sha1 '49f62868569edfccbfc8de70e87996c94739a176'
 
   option :universal
 
