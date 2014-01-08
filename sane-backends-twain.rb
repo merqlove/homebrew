@@ -1,6 +1,6 @@
 require 'formula'
 
-class SaneBackends < Formula
+class SaneBackendsTwain < Formula
   homepage 'http://www.sane-project.org/'
   url 'http://fossies.org/linux/misc/sane-backends-1.0.24.tar.gz'
   sha1 'c10bcb30a1b092b2c2fe5a86d6a5efc29123ccf9'
