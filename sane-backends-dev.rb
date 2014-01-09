@@ -11,7 +11,7 @@ class SaneBackendsDev < Formula
     # sha1 'f4307ebd1fe094dbd14e4e19c717baa83bdd9631' => :snow_leopard
     # sha1 '45d35923b0439617adb86630bdd4985a6cf03984' => :lion
     sha1 'a3034eab8f1898afcecb72d9de41025616b56b5a' => :mountain_lion
-    sha1 '6388a4c48f44d111fee7ee895393f77a768e50fb' => :mavericks
+    sha1 '91c6752c5b9e3415406943c08254ac489c0deea2' => :mavericks
   end
 
   depends_on 'jpeg'
