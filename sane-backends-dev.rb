@@ -11,11 +11,12 @@ class SaneBackendsDev < Formula
     # sha1 'f4307ebd1fe094dbd14e4e19c717baa83bdd9631' => :snow_leopard
     # sha1 '45d35923b0439617adb86630bdd4985a6cf03984' => :lion
     sha1 'a3034eab8f1898afcecb72d9de41025616b56b5a' => :mountain_lion
+    sha1 '82a9d9d6b7e623df070f5987cacf25b8c68247e3' => :mavericks
   end
 
   depends_on 'jpeg'
   depends_on 'libtiff'
-  depends_on 'libusb-compat'
+  depends_on 'libusbx'
 
   skip_clean :la
 
