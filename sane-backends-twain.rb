@@ -26,7 +26,7 @@ class SaneBackendsTwain < Formula
                           "--localstatedir=#{var}",
                           #"--without-gphoto2",
                           #"--enable-local-backends",
-                          "--enable-libusb",
+                          "--enable-libusb"
                           #"--disable-latex"
     system "make"
     system "make install"
