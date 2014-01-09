@@ -21,13 +21,13 @@ class SaneBackendsTwain < Formula
   def install
     ENV.universal_binary if build.universal?
     ENV.j1 # Makefile does not seem to be parallel-safe
-    system "./configure", "--disable-dependency-tracking",
+    system "./configure", #"--disable-dependency-tracking",
                           "--prefix=#{prefix}",
                           "--localstatedir=#{var}",
-                          "--without-gphoto2",
-                          "--enable-local-backends",
+                          #"--without-gphoto2",
+                          #"--enable-local-backends",
                           "--enable-libusb",
-                          "--disable-latex"
+                          #"--disable-latex"
     system "make"
     system "make install"
 
