@@ -16,7 +16,7 @@ class SaneBackendsDev < Formula
 
   depends_on 'jpeg'
   depends_on 'libtiff'
-  depends_on 'libusb'
+  depends_on 'libusb-compat'
 
   skip_clean :la
 
