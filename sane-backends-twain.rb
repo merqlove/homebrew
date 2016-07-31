@@ -3,7 +3,7 @@ require 'formula'
 class SaneBackendsTwain < Formula
   homepage 'http://www.sane-project.org/'
   url 'http://fossies.org/linux/misc/sane-backends-1.0.24.tar.gz'
-  sha1 'c10bcb30a1b092b2c2fe5a86d6a5efc29123ccf9'
+  sha256 '835bef7738ea3e94a32fc7b55881a86db57f94a3d325d7bbf248eb3a9ab8cfc9'
 
   option :universal
 
