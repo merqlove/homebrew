@@ -12,7 +12,7 @@ class Fn < Formula
 
   def install
     bin.install "fn_mac"
-    mv "#{bin}/fn_mac", "fn"
+    mv "#{bin}/fn_mac", "#{bin}/fn"
     bin.install "fn"
   end
 
