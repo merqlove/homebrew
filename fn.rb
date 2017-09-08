@@ -5,7 +5,7 @@ class Fn < Formula
   stable do
     url "https://github.com/iron-io/functions/releases/download/0.2.62/fn_mac"
     sha256 "ba753fbaa4f9487c99f9fa5b870e8118ec2d8a558735ed3ce1144a19fda92460"
-    version "0.2.62-1"
+    version "0.2.62-2"
   end
 
   bottle :unneeded
