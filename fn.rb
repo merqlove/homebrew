@@ -11,8 +11,8 @@ class Fn < Formula
   bottle :unneeded
 
   def install
-    prefix.install "fn_mac", "#{libexec}/fn"
-    bin.install "#{libexec}/fn"
+    prefix.install "fn_mac", "#{prefix}/fn"
+    bin.install "#{prefix}/fn"
   end
 
   test do
