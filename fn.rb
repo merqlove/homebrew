@@ -12,8 +12,8 @@ class Fn < Formula
 
   def install
     libexec.install "fn_mac"
-    FileUtils.mv libexec/"fn_mac", libexec/"fn"
-    FileUtils.chmod "+x", libexec/"fn"
+    mv libexec/"fn_mac", libexec/"fn"
+    chmod "+x", libexec/"fn"
     bin.install_symlink libexec/"fn"
   end
 
