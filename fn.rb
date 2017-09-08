@@ -1,4 +1,4 @@
-class IronFunctionsCli < Formula
+class Fn < Formula
   desc "Go version of the Iron.io Functions command-line tools"
   homepage "https://iron.io"
   url "https://github.com/iron-io/functions/releases/download/0.2.62/fn_mac"
