@@ -12,7 +12,7 @@ class Fn < Formula
 
   def install
     mkdir "bin"
-    mv "#{bin}/../fn_mac", "#{bin}/fn"
+    mv "#{lib}/fn_mac", "#{bin}/fn"
     bin.install "fn"
   end
 
