@@ -11,7 +11,8 @@ class Fn < Formula
   bottle :unneeded
 
   def install
-    mv "#{bin}/fn_mac", "#{bin}/fn"
+    mkdir "bin"
+    mv "#{bin}/../fn_mac", "#{bin}/fn"
     bin.install "fn"
   end
 
