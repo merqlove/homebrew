@@ -11,9 +11,8 @@ class Fn < Formula
   bottle :unneeded
 
   def install
-    mkdir "bin"
-    mv "./fn_mac", "#{bin}/fn"
-    bin.install "fn"
+    libexec.install "fn_mac"
+    bin.write_exec_script libexec/"fn_mac", "fn"
   end
 
   test do
