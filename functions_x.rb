@@ -7,6 +7,7 @@ class FunctionsX < Formula
     sha256 "e39e67195afc61b4bce69d61aa1248be3e5980fa5adce432315021d98a093c7a"
     
     depends_on "go" => :build
+    depends_on "dep" => :build
   end
 
   bottle do
@@ -19,8 +20,8 @@ class FunctionsX < Formula
   def install
     ENV["GOPATH"] = buildpath
 #     ENV["GLIDE_HOME"] = HOMEBREW_CACHE/"glide_home/#{name}"
-    dir = buildpath/"src/github.com/iron-io/functions"
-    dir.install Dir["*"]
+    #dir = buildpath/"src/github.com/iron-io/functions"
+    #dir.install Dir["*"]
     cd dir do
       system "make", "dep"
       system "go", "build", "-o", bin/"fn"
