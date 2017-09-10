@@ -19,8 +19,6 @@ class FunctionsX < Formula
 
   def install
     ENV["GOPATH"] = buildpath
-    STDERR.puts ENV["GOPATH"]
-#     ENV["GLIDE_HOME"] = HOMEBREW_CACHE/"glide_home/#{name}"
     dir = buildpath/"src/github.com/iron-io/functions"
     dir.install Dir["*"]
     cd dir/"fn" do
