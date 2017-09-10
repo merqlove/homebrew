@@ -2,7 +2,7 @@ class Functions < Formula
   desc "Go version of the IronFunctions command-line tools"
   homepage "https://github.com/iron-io/functions"
     
-  head do
+  stable do
     url "https://github.com/iron-io/functions/archive/0.2.62.tar.gz"
     sha256 "5ca1dee3732ae679353872b6be5fe9aa7e6119892fb477241c95a2546e140067"
     
