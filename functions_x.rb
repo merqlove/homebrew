@@ -23,7 +23,7 @@ class FunctionsX < Formula
 #     ENV["GLIDE_HOME"] = HOMEBREW_CACHE/"glide_home/#{name}"
     dir = buildpath/"src/github.com/iron-io/functions"
     dir.install Dir["*"]
-    cd dir do
+    cd dir/"fn" do
       system "make", "dep"
       system "go", "build", "-o", bin/"fn"
     end
