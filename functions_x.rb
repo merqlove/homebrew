@@ -4,7 +4,7 @@ class FunctionsX < Formula
     
   stable do
     url "https://github.com/iron-io/functions/archive/0.2.62.tar.gz"
-    sha256 "5ca1dee3732ae679353872b6be5fe9aa7e6119892fb477241c95a2546e140067"
+    sha256 "e39e67195afc61b4bce69d61aa1248be3e5980fa5adce432315021d98a093c7a"
     
     depends_on "go" => :build
   end
