@@ -1,4 +1,4 @@
-class FunctionsX < Formula
+class Functions < Formula
   desc "Go version of the IronFunctions command-line tools"
   homepage "https://github.com/iron-io/functions"
   url "https://github.com/iron-io/functions/archive/0.2.62.tar.gz"
