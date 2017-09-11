@@ -19,6 +19,7 @@ class Functions < Formula
   end
 
   test do
-    system bin/"fn", "-v"
+    result = system bin/"fn", "-v"
+    result == version
   end
 end
