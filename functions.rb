@@ -19,7 +19,9 @@ class Functions < Formula
   end
 
   test do
-    result = system bin/"fn", "-v"
-    result == version
+    output = shell_output("#{bin}/fn -v 2>&1", 1)
+    assert_equal version, output.chomp
+    output = shell_output("#{bin}/fn init --runtime go user/some 2>&1", 1)
+    assert_equal "runtime: go\nfunc.yaml created.", output.chomp
   end
 end
