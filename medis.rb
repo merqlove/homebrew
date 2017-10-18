@@ -1,6 +1,6 @@
 cask 'medis' do
   version '0.6.4'
-  sha256 '894dd52129d445176a59fc75d8838417eb90aced4c678cc306ab7e57bef269be'
+  sha256 '9c0116604f523e1405d0671c38887302375d4d5a64387f2875468c6b5a594317'
 
   # github.com/luin/medis was verified as official when first introduced to the cask
   url "https://github.com/merqlove/medis/releases/download/v#{version}/medis-v#{version}-mac-x64.zip"
